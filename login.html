@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Secure institutional login portal for Sterling Global Capital account holders." />
+    <title>Login | Sterling Global Capital</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="auth.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="/index.html">Sterling Global Capital</a>
+        <div class="header-links">
+          <a class="btn btn-secondary" href="/register.html">Open Account</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="auth-wrap">
+      <section class="auth-card" aria-labelledby="login-title">
+        <p class="eyebrow">Client Portal</p>
+        <h1 id="login-title">Secure Account Login</h1>
+        <p>Access your institutional dashboard and custody account information.</p>
+
+        <form class="form-grid" action="#" method="post">
+          <div class="form-row">
+            <label for="email">Email Address</label>
+            <input id="email" type="email" name="email" autocomplete="email" required />
+          </div>
+
+          <div class="form-row">
+            <label for="password">Password</label>
+            <input id="password" type="password" name="password" autocomplete="current-password" required />
+          </div>
+
+          <button class="btn btn-primary" type="submit">Sign In</button>
+        </form>
+
+        <div class="helper-links">
+          <a href="/forgot-password.html">Forgot password?</a>
+          <a href="/register.html">Create account</a>
+        </div>
+
+        <p class="disclaimer">For security, login attempts are monitored and protected by continuous verification controls.</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">© 2026 Sterling Global Capital. All rights reserved.</div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Open an institutional digital asset account with Sterling Global Capital." />
+    <title>Open Account | Sterling Global Capital</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="auth.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="/index.html">Sterling Global Capital</a>
+        <div class="header-links">
+          <a class="btn btn-secondary" href="/login.html">Login</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="auth-wrap">
+      <section class="auth-card" aria-labelledby="register-title">
+        <p class="eyebrow">Account Onboarding</p>
+        <h1 id="register-title">Open an Investment Account</h1>
+        <p>Complete the form below to begin secure onboarding and account verification.</p>
+
+        <form class="form-grid" action="#" method="post">
+          <div class="form-row">
+            <label for="full-name">Full Name</label>
+            <input id="full-name" type="text" name="full_name" autocomplete="name" required />
+          </div>
+
+          <div class="form-row">
+            <label for="reg-email">Email Address</label>
+            <input id="reg-email" type="email" name="email" autocomplete="email" required />
+          </div>
+
+          <div class="form-row">
+            <label for="country">Country of Residence</label>
+            <select id="country" name="country" required>
+              <option value="">Select country</option>
+              <option value="us">United States</option>
+              <option value="uk">United Kingdom</option>
+              <option value="ca">Canada</option>
+              <option value="sg">Singapore</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-row">
+            <label for="reg-password">Password</label>
+            <input id="reg-password" type="password" name="password" autocomplete="new-password" required />
+          </div>
+
+          <button class="btn btn-primary" type="submit">Submit Application</button>
+        </form>
+
+        <div class="helper-links">
+          <span>Already registered? <a class="inline-link" href="/login.html">Sign in</a></span>
+          <a href="/forgot-password.html">Reset password</a>
+        </div>
+
+        <p class="disclaimer">All applications are subject to verification and compliance checks before activation.</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">© 2026 Sterling Global Capital. All rights reserved.</div>
+    </footer>
+  </body>
+</html>
